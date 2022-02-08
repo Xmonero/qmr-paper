@@ -9,7 +9,7 @@ export default {
   name: 'app',
   data () {
     return {
-      test: 'XMR'
+      test: 'QMR'
     }
   },
   mounted() {
@@ -27,7 +27,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: ##38761d;
 }
 
 h1, h2 {
@@ -45,6 +45,6 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: #38761d;
 }
 </style>

@@ -2,6 +2,12 @@
   <div class="container">
     <h2>{{title}}</h2>
     <p><i>This generates a new wallet address & mnemonic seed </i></p>
+        <p><i>You can visit the Quenero websites to get more informations <br>
+              Websites: <a target="_blank" href="https://quenero.tech/">Quenero.Tech</a> and
+             <a target="_blank" href="https://docs.quenero.tech/">DOCS</a> <br>
+             Explorer: <a target="_blank" href="https://explorer.quenero.tech/">Block Explorer</a>
+         </i></p>
+
     <div class="btn-group btn-group-lg" role="group">
       <button type="button" v-on:click="createWallet" class="btn btn-success">Create Wallet</button>
     </div>
@@ -24,7 +30,7 @@
     </div>
     <hr>
     <i>
-      Source code @  <a target="_blank" href="https://github.com/bradoyler/xmr-paper">Github.com/bradoyler/XMR-Paper</a>
+      Source code @  <a target="_blank" href="https://github.com/quenero/qmr-paper">Github.com-Paper</a>
     </i>
   </div>
 </template>
@@ -35,7 +41,7 @@ const walletUtils = require('mymonero-core-js/monero_utils/monero_wallet_utils')
 export default {
   data () {
     return {
-      title: 'Monero Paper',
+      title: 'Quenero Paper',
       displayClass: 'is-hidden',
       mnemonicString: '',
       public_addr: ''

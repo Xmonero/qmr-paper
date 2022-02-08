@@ -22121,7 +22121,7 @@ This version has been reimplemented in javascript and placed in public domain.
 				} else if (typeof window !== 'undefined' && typeof window.msCrypto === 'object' && typeof window.msCrypto.getRandomValues === 'function') {
 					window.msCrypto.getRandomValues(array);
 				} else {
-					throw "Unfortunately MyMonero only runs on browsers that support the JavaScript Crypto API";
+					throw "Unfortunately MyQuenero only runs on browsers that support the JavaScript Crypto API";
 				}
 
 				++i;
@@ -27160,22 +27160,22 @@ const JSBigInt = __webpack_require__(38).BigInteger
 module.exports = 
 {
 	// Number of atomic units in one unit of currency. e.g. 12 => 10^12 = 1000000000000
-	coinUnitPlaces: 12,
+	coinUnitPlaces: 9,
 
 	// Minimum number of confirmations for a transaction to show as confirmed
 	txMinConfirms: 10,
 
 	// Currency symbol
-	coinSymbol: 'XMR',
+	coinSymbol: 'QMR',
 
 	// OpenAlias prefix
-	openAliasPrefix: "xmr",
+	openAliasPrefix: "qmr",
 
 	// Currency name
-	coinName: 'Monero',
+	coinName: 'Quenero',
 
 	// Payment URI Prefix
-	coinUriPrefix: 'monero:',
+	coinUriPrefix: 'quenero:',
 
 	// Prefix code for addresses
 	addressPrefix: 18, // 18 => addresses start with "4"
@@ -27537,7 +27537,7 @@ module.exports = function listToStyles (parentId, list) {
   name: 'app',
   data: function data() {
     return {
-      test: 'XMR'
+      test: 'QMR'
     };
   },
   mounted: function mounted() {
@@ -30315,7 +30315,7 @@ var walletUtils = __webpack_require__(94);
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
-      title: 'Monero Paper',
+      title: 'Quenero Paper',
       displayClass: 'is-hidden',
       mnemonicString: '',
       public_addr: ''
@@ -44078,7 +44078,7 @@ nacl.setPRNG = function(fn) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_c('h2',[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_vm._m(0,false,false),_vm._v(" "),_c('div',{staticClass:"btn-group btn-group-lg",attrs:{"role":"group"}},[_c('button',{staticClass:"btn btn-success",attrs:{"type":"button"},on:{"click":_vm.createWallet}},[_vm._v("Create Wallet")])]),_vm._v(" "),_c('br'),_c('br'),_vm._v(" "),_c('div',{staticClass:"console panel panel-default",class:_vm.displayClass,attrs:{"id":"panel1"}},[_vm._m(1,false,false),_vm._v(" "),_c('div',{staticClass:"panel-body"},[_vm._v("\n      "+_vm._s(_vm.public_addr)+"\n    ")])]),_vm._v(" "),_c('div',{staticClass:"console panel panel-default",class:_vm.displayClass,attrs:{"id":"panel2"}},[_vm._m(2,false,false),_vm._v(" "),_c('div',{staticClass:"panel-body"},[_vm._v("\n      "+_vm._s(_vm.mnemonicString)+"\n    ")])]),_vm._v(" "),_c('hr'),_vm._v(" "),_vm._m(3,false,false)])}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',[_c('i',[_vm._v("This generates a new wallet address & mnemonic seed ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"panel-heading"},[_c('h3',{staticClass:"panel-title"},[_vm._v(" Public Address ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"panel-heading"},[_c('h3',{staticClass:"panel-title"},[_vm._v(" Mnemonic seed ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('i',[_vm._v("\n    Source code @  "),_c('a',{attrs:{"target":"_blank","href":"https://github.com/bradoyler/xmr-paper"}},[_vm._v("Github.com/bradoyler/XMR-Paper")])])}]
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',[_c('i',[_vm._v("This generates a new wallet address & mnemonic seed ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"panel-heading"},[_c('h3',{staticClass:"panel-title"},[_vm._v(" Public Address ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"panel-heading"},[_c('h3',{staticClass:"panel-title"},[_vm._v(" Mnemonic seed ")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('i',[_vm._v("\n    Source code @  "),_c('a',{attrs:{"target":"_blank","href":"https://github.com/Xmonero/qmr-paper"}},[_vm._v("QMR-Paper")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
